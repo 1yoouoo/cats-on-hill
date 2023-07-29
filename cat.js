@@ -5,18 +5,18 @@ export class Cat {
     this.totalframe = 8;
     this.curFrame = 0;
 
-    this.imgWidth = 360;
-    this.imgHeight = 300;
+    this.imgWidth = 56;
+    this.imgHeight = 36;
 
-    this.catWidth = 180;
-    this.catHeight = 150;
+    this.catWidth = 28;
+    this.catHeight = 18;
 
     this.catWidthHalf = this.catWidth / 2;
     this.x = stageWidth + this.catWidth;
     this.y = 0;
     this.speed = Math.random() * 2 + 1;
 
-    this.fps = 24;
+    this.fps = 5;
     this.fpsTime = 1000 / this.fps;
   }
 
@@ -36,7 +36,7 @@ export class Cat {
   }
 
   animate(ctx, dots) {
-    this.x -= this.speed;
+    this.x -= this.speed * 0.4;
     const closest = this.getY(this.x, dots);
     this.y = closest.y;
 
@@ -51,7 +51,7 @@ export class Cat {
       this.imgWidth,
       this.imgHeight,
       -this.catWidthHalf,
-      -this.catHeight + 20,
+      -this.catHeight + 2,
       this.catWidth,
       this.catHeight
     );

@@ -6,7 +6,7 @@ export class CatController {
     this.img.onload = () => {
       this.loaded();
     };
-    this.img.src = "cat.png";
+    this.img.src = "combined.png";
 
     this.items = [];
 
