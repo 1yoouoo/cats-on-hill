@@ -5,11 +5,11 @@ export class Cat {
     this.totalframe = 8;
     this.curFrame = 0;
 
-    this.imgWidth = 56;
-    this.imgHeight = 36;
+    this.imgWidth = 112;
+    this.imgHeight = 72;
 
-    this.catWidth = 28;
-    this.catHeight = 18;
+    this.catWidth = 56;
+    this.catHeight = 36;
 
     this.catWidthHalf = this.catWidth / 2;
     this.x = stageWidth + this.catWidth;

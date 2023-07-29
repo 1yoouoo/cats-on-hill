@@ -31,3 +31,5 @@ for img in img_list:
 
 # 결과 이미지를 저장한다.
 new_img.save('combined.png')
+
+
